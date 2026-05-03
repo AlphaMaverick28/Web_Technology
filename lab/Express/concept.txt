@@ -1,0 +1,18 @@
+none js is run time environment is used to run code outside brwoser
+
+made from:
+chrom v8 js engin used to create fast and scalable web applications
+
+
+express:
+express is an minimal and flexiable web framework for node js
+it helps to handle routes,middleware and http request easily
+makes backend devlopment fast and simple
+
+why we use express js
+simplyfies server creatation in node js it offers powerful features like routing ,middleware,staic files serving ,erroe handling
+
+
+NPM:
+node package managing
+npm is tool to install packages or libraries from the node js ecosystem

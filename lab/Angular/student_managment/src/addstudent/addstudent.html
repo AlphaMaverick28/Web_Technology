@@ -1,0 +1,12 @@
+<h2>Add Student</h2>
+
+<form (ngSubmit)="addStudent()">
+  <input type="text" [(ngModel)]="student.name" name="name" placeholder="Name" required>
+  <input type="number" [(ngModel)]="student.age" name="age" placeholder="Age" required>
+  <input type="text" [(ngModel)]="student.course" name="course" placeholder="Course" required>
+
+  <button type="submit">Add</button>
+</form>
+
+<br>
+<button routerLink="/">Back</button>

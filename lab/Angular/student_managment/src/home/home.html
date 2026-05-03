@@ -1,0 +1,11 @@
+<h1>Student Management System</h1>
+
+<button routerLink="/add">Add Student</button>
+
+<h3>Student List</h3>
+
+<ul>
+  <li *ngFor="let s of students">
+    {{s.name}} - {{s.age}} - {{s.course}}
+  </li>
+</ul>
