@@ -1,0 +1,3 @@
+dom is the bridge betn js and html 
+dom is programming interface for html web browser load and html page it converts html into object
+that object structure is called dom . js uses dom to read,change,and delete html elements 

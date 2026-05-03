@@ -41,6 +41,7 @@ console.log(true+true);
 console.log(true+String);
 */
 
+/* 
 let game_counter=100;
  game_counter++;
 console.log(game_counter);
@@ -48,3 +49,33 @@ console.log(game_counter);
 let score=200;
 score++;
 console.log(score);
+
+*/
+
+// String to Number
+let str = "123";
+let num = Number(str);
+console.log(num, typeof num);
+
+// Number to String
+let n = 100;
+let str1 = String(n);
+console.log(str1, typeof str1);
+
+// Boolean to Number
+let isTrue = true;
+let boolToNum = Number(isTrue);
+console.log(boolToNum, typeof boolToNum);  // true -> 1
+
+let isFalse = false;
+let boolToNum2 = Number(isFalse);
+console.log(boolToNum2, typeof boolToNum2); // false → 0
+
+// Boolean to String
+let boolStr = String(true);
+console.log(boolStr, typeof boolStr);
+
+// String to Boolean
+let name = "Atharv";
+let strToBool = Boolean(name);
+console.log(strToBool, typeof strToBool);

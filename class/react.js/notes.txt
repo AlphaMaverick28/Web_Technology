@@ -1,0 +1,24 @@
+virtual dom :
+react creates copy of real dom its called virtual dom .
+when data changes react creates virtual dom 
+used for high performance 
+
+vite fast build tool 
+npm install -> install dependancy
+npm run dev -> start server
+.jsx -> javascript xml it allows us to write html code inside javascript
+rules of jsx -> must return single parent , use scope bracket for javascript 
+component is heart of react 1. functional component
+use component -> function app () {return <> </>}
+properties (props):
+data pass from parent to child 
+function app () {return <student name='Atharv'/>}
+function student (props)
+{
+    return <h2>Name:{props.name}</h2>
+}
+
+activity:
+what is component and its types
+where we use component is react with 2 examples 
+what is props why we use props types of props with 2 examples
