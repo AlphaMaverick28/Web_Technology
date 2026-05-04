@@ -3,11 +3,11 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
-    "analytics": "e1e3b0c2-1d8a-40d8-8b5b-60bf2ee80c19"
+    "analytics": false
   },
   "newProjectRoot": "projects",
   "projects": {
-    "StudentManagement": {
+    "student-card": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "StudentManagement:build:production"
+              "buildTarget": "student-card:build:production"
             },
             "development": {
-              "buildTarget": "StudentManagement:build:development"
+              "buildTarget": "student-card:build:development"
             }
           },
           "defaultConfiguration": "development"
