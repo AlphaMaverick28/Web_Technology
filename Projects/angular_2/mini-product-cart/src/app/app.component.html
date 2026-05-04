@@ -1,0 +1,38 @@
+<!-- Main Application Layout -->
+<div class="app-container">
+
+  <!-- Header Section -->
+  <header class="app-header">
+    <div class="header-content">
+      <h1 class="app-title">🛍️ {{ title }}</h1>
+      <p class="app-subtitle">Browse products and add them to your cart</p>
+    </div>
+  </header>
+
+  <!-- Main Content: Product List + Cart side by side -->
+  <main class="main-content">
+
+    <!-- Product List Component -->
+    <!-- [products]: Property binding to pass products array to child -->
+    <!-- (addToCart): Event binding to handle add-to-cart from child -->
+    <app-product-list
+      [products]="products"
+      (addToCart)="addToCart($event)">
+    </app-product-list>
+
+    <!-- Cart Component -->
+    <!-- [cartItems]: Property binding to pass cart data to child -->
+    <!-- (removeFromCart): Event binding to handle remove from child -->
+    <app-cart
+      [cartItems]="cartItems"
+      (removeFromCart)="removeFromCart($event)">
+    </app-cart>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <p>Mini Product Cart &mdash; Built with Angular (Standalone Components)</p>
+  </footer>
+
+</div>

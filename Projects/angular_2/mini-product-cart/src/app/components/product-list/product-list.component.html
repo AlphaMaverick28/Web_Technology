@@ -1,0 +1,13 @@
+<!-- Product List Section -->
+<div class="product-list-container">
+  <h2 class="section-title">🛍️ Available Products</h2>
+
+  <!-- *ngFor: loops through each product and renders a ProductItemComponent -->
+  <div class="product-grid">
+    <app-product-item
+      *ngFor="let product of products; trackBy: trackByProductId"
+      [product]="product"
+      (addToCart)="onAddToCart($event)">
+    </app-product-item>
+  </div>
+</div>

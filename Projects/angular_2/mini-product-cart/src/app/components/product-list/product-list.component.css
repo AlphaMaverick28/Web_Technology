@@ -1,0 +1,22 @@
+/* ===== Product List Section ===== */
+.product-list-container {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Section title */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 20px 0;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #e2e8f0;
+}
+
+/* Product grid: responsive card layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Library Book Manager - Manage your book collection with ease" />
+  <title>Library Book Manager</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font for modern typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header Section -->
+    <header class="header">
+      <div class="header-icon">📚</div>
+      <h1>Library Book Manager</h1>
+      <p class="subtitle">Manage your book collection with ease</p>
+    </header>
+
+    <!-- Add Book Form -->
+    <div class="add-book-section">
+      <div class="input-group">
+        <input
+          type="text"
+          id="bookNameInput"
+          placeholder="Enter book name..."
+          autocomplete="off"
+        />
+        <button id="addBookBtn" onclick="addBook()">
+          <span class="btn-icon">+</span> Add Book
+        </button>
+      </div>
+      <!-- Error message display -->
+      <p id="errorMsg" class="error-msg"></p>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+      <div class="stat">
+        <span class="stat-label">Total Books</span>
+        <span class="stat-value" id="totalBooks">0</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Issued</span>
+        <span class="stat-value issued-count" id="issuedBooks">0</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Available</span>
+        <span class="stat-value available-count" id="availableBooks">0</span>
+      </div>
+    </div>
+
+    <!-- Book List -->
+    <div id="bookList" class="book-list">
+      <!-- Books will be rendered here by JavaScript -->
+    </div>
+
+    <!-- Empty State Message -->
+    <div id="emptyState" class="empty-state" style="display: none;">
+      <div class="empty-icon">📭</div>
+      <p>No books in the library yet.</p>
+      <p class="empty-hint">Add your first book above to get started!</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

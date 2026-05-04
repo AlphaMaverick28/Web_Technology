@@ -1,0 +1,13 @@
+<!-- Product Card: displays product details using interpolation {{ }} -->
+<div class="product-card">
+  <!-- Product name displayed using interpolation -->
+  <h3 class="product-name">{{ product.name }}</h3>
+
+  <!-- Product price displayed using interpolation with currency formatting -->
+  <p class="product-price">₹{{ product.price.toFixed(2) }}</p>
+
+  <!-- Add to Cart button with event binding (click) -->
+  <button class="btn-add" (click)="onAddToCart()">
+    🛒 Add to Cart
+  </button>
+</div>
